@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<device.info>
+		<keyboard name="GS3104T-PRO" device_type="101" device_info="rgb-keyboard" img_connected="home_keyboard_connected.png" img_disconnected="home_keyboard_disconnected.png">
+			<mode value="0" desc="USB" vid="05AC" pid="024F" product_name="GS3104T PRO" hid_interface="VID_05AC&PID_024F&MI_00"/>
+			<mode value="2" desc="2.4G TYPE-A" vid="05AC" pid="024F" product_name="GS3104T-PRO 2.4G" hid_interface="VID_05AC&PID_024F&MI_03"/>
+		</keyboard>
+	</device.info>
+	<language.info default_lan="2052">
+		<lan value="2052" />
+		<lan value="1033" />
+		<lan value="1028" />
+	</language.info>
+	<software name="GS3104T-PRO Driver" version="Beta 1.0.0.3">
+		<website url="https://www.ganss.cn/"/>
+		<store url=""/>
+		<upgrade url=""/>
+		<copyright info="Copyright © 2024 GANSS"/>
+	</software>
+</config>

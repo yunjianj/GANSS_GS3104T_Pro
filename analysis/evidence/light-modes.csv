@@ -1,0 +1,21 @@
+mode,name_zh,name_en,language_id,language_id_string_va,insert_call_va,config_func_raw,physical_effect_verified
+1,静态恒亮,Static,521,0x56e424,0x42b3ba,49,False
+2,单点亮,SingleOn,522,0x56e41c,0x42b3e7,51,False
+3,单熄灭,SingleOff,523,0x56e434,0x42b414,51,False
+4,繁星点点,Glittering,524,0x56e42c,0x42b441,51,False
+5,漫天飞雪,Falling,525,0x56e444,0x42b46e,51,False
+6,百花争艳,Colourful,526,0x56e43c,0x42b49b,3,False
+7,动态呼吸,Breath,527,0x56e454,0x42b4c8,51,False
+8,光谱循环,Spectrum,528,0x56e44c,0x42b4f5,3,False
+9,彩泉涌动,Outward,529,0x56e464,0x42b522,51,False
+10,多彩纵横,Scrolling,530,0x56e45c,0x42b54f,59,False
+11,随波逐流,Rolling,531,0x56e474,0x42b57c,55,True
+12,峰回路转,Rotating,532,0x56e46c,0x42b5a9,55,False
+13,一触即发,Explode,533,0x56e484,0x42b5d6,51,False
+14,一石二鸟,Launch,534,0x56e47c,0x42b603,51,False
+15,涟漪扩散,Ripples,535,0x56e494,0x42b630,51,False
+16,川流不息,Flowing,536,0x56e48c,0x42b65d,55,False
+17,重峦叠嶂,Pulsating,537,0x56e4a4,0x42b68a,51,False
+18,斜风细雨,Tilt,538,0x56e49c,0x42b6b7,55,False
+19,来回穿梭,Shuttle,539,0x56e4b4,0x42b6e4,51,False
+0,关闭背光,LED Off,540,0x56e4ac,0x42b711,0,False

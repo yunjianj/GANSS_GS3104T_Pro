@@ -1,0 +1,727 @@
+[
+  {
+    "file": "GS3104T-PRO/DeviceDriver.exe",
+    "size": 2207744,
+    "sha256": "1fa6591f5e48a7417076ac244cd886aa6407434f45138ce9932c46dca4cf2b33"
+  },
+  {
+    "file": "GS3104T-PRO/config.xml",
+    "size": 869,
+    "sha256": "59d53b3d59ce186c098f7694d390754edd023112a220f6f0279635c1716086fd"
+  },
+  {
+    "file": "GS3104T-PRO/device/home_keyboard_connected.png",
+    "size": 277328,
+    "sha256": "0cdf4b2fc6f80a3369565943edc6572ad49d962a24880175c09d05a22e23d3e8"
+  },
+  {
+    "file": "GS3104T-PRO/device/home_keyboard_disconnected.png",
+    "size": 195863,
+    "sha256": "1843c4eb0844f009b21d202ea432f4406de6bba08dba597c243298f202ae69a9"
+  },
+  {
+    "file": "GS3104T-PRO/font/OpenSans-ExtraBold.ttf",
+    "size": 222584,
+    "sha256": "0fcbdb5cbeea00ae532352c7c94a7d288ebc911ba85f4d595012032dcab64ba8"
+  },
+  {
+    "file": "GS3104T-PRO/font/OpenSans-Light.ttf",
+    "size": 222412,
+    "sha256": "cf5f5184c1441a1660aa52526328e9d5c2793e77b6d8d3a3ad654bdb07ab8424"
+  },
+  {
+    "file": "GS3104T-PRO/font/OpenSans-Regular.ttf",
+    "size": 217360,
+    "sha256": "e64e508b2aa2880f907e470c4550980ec4c0694d103a43f36150ac3f93189bee"
+  },
+  {
+    "file": "GS3104T-PRO/font/OpenSans-Semibold.ttf",
+    "size": 221328,
+    "sha256": "aa3b0ef53db12e3d45094030cac0e69d384e44cc5978643dd4390041cad546e2"
+  },
+  {
+    "file": "GS3104T-PRO/language/1028.lan",
+    "size": 8850,
+    "sha256": "f56674cad3e1f7ebd6dc6031ac5ed06e03aebe0f0b55907a7c4cfab136c7337b"
+  },
+  {
+    "file": "GS3104T-PRO/language/1033.lan",
+    "size": 19678,
+    "sha256": "6a0e5eeaa941b951b70c86bb1c6956f2032749484c7d606dfeca784d236436f6"
+  },
+  {
+    "file": "GS3104T-PRO/language/2052.lan",
+    "size": 8812,
+    "sha256": "e1862ac3d2cb961ad82ce28bf0e8966851aa89f67981b3b6e4eb7a0a922c4d6e"
+  },
+  {
+    "file": "GS3104T-PRO/layouts/rgb-keyboard.xml",
+    "size": 21302,
+    "sha256": "5942e5a4444034e42351e95f998b93a5a75045c83c83abeb0a0758d4d2688fbb"
+  },
+  {
+    "file": "GS3104T-PRO/mfc140u.dll",
+    "size": 4862264,
+    "sha256": "b46304b5035e099947f3fda35e637d34f9e8dd194021b583efff74d547048340"
+  },
+  {
+    "file": "GS3104T-PRO/msvcp140.dll",
+    "size": 440120,
+    "sha256": "a26e91d25f8dd72271d2cfc4c045fc5e9cc2ecb23e1195674e54e4ca92d780da"
+  },
+  {
+    "file": "GS3104T-PRO/mui.dll",
+    "size": 1195008,
+    "sha256": "79272c1aa99e654e420d211c3776d6a61060a36fa61ed953f0edfb23e9523c59"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/DeviceDriver.ico",
+    "size": 270398,
+    "sha256": "f1ee5daee791ecb50bad197b1125aa8a480b730ba3357c9478ef5470eda59627"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/btn_apply.png",
+    "size": 2340,
+    "sha256": "accbd9900605a9ac96b54983f1d002ff579f4a0e75b3e84c24c1d52d79f6990e"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/btn_cancel.png",
+    "size": 2340,
+    "sha256": "accbd9900605a9ac96b54983f1d002ff579f4a0e75b3e84c24c1d52d79f6990e"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/btn_checkbox.png",
+    "size": 3516,
+    "sha256": "52ff9ef23fb525a8f8b247e0a0f5a8f90fa0d8dd69699a111da58690bc80afa4"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/btn_openfile.png",
+    "size": 1360,
+    "sha256": "be859a7217d931cb82885ab318c49c94b7682fc7cdcd062253676ddfb6874c6f"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/btn_radiobox.png",
+    "size": 5594,
+    "sha256": "7ca397dcfd58f105f2a07eb624044160fd444a98a615301574922d20502c875b"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/btn_record_del.png",
+    "size": 1949,
+    "sha256": "89de525bfcbf225a17f99cd1569e05bed3ed586677c80ba86942da9dfb5ca2ee"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/btn_record_down.png",
+    "size": 1124,
+    "sha256": "600645896133b83658a4697cba15ff6f93a8c828e15844100edae138f9eecd62"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/btn_record_time.png",
+    "size": 1737,
+    "sha256": "31cf05bda0caea1cbae0346ff8ef33c73b87fadc40a1a1a589b8182b6d753403"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/btn_record_up.png",
+    "size": 1146,
+    "sha256": "79f6baab5768ae7787a7b21a6fcc1947ceafe63ece6541a11dc61ff9d59adfe5"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/home_bkg.png",
+    "size": 230584,
+    "sha256": "60f87b124fee2feaa46f406034433d9b34ceb159125ceb327118314970e85b48"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/24g_mode.png",
+    "size": 387,
+    "sha256": "e066ab570ad53aa91a6934aefaaae16e6cbdebcbca66569fc604a53f3fd589b8"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/bt_mode.png",
+    "size": 803,
+    "sha256": "92caee5845e977cf9d4fb9a54e46e8b1ce9e3b855c9bcd83e3f700ffff40f7fb"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_battery_bkg.png",
+    "size": 529,
+    "sha256": "320c64da5c62455aa6929e23fd46ab0f661309bf34385658430cf25e17758313"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_batteryvalue.png",
+    "size": 353,
+    "sha256": "9c2c850a96f6d1fb8f215a3a437d64c8e64d3857ca04d14dbff2bdf6678a5ffd"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_bluetooth.png",
+    "size": 322,
+    "sha256": "a7073a27b9810924d8a54bf4c07018713698a81a125588f26f183b257298cc1f"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_brightness_down.png",
+    "size": 415,
+    "sha256": "046ff6c9f581db19f07887781d77638791fc134233874ebdcaf2ab05ac0de68a"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_brightness_up.png",
+    "size": 415,
+    "sha256": "046ff6c9f581db19f07887781d77638791fc134233874ebdcaf2ab05ac0de68a"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_cal.png",
+    "size": 1187,
+    "sha256": "6ab0b265b0a90cdb1a2ed0ff9b67b09364d3ab132c0e237eaa25b334b4060b67"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_charge.png",
+    "size": 471,
+    "sha256": "150795f5a123a3b3f5c1ee7fd36e4d0e441a75640afd4c39e510287ffbcbf601"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_circle.png",
+    "size": 1308,
+    "sha256": "e0e357bea9b3609d546813f979a79579f0761d00caccc301ee9546658b632497"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_colors.png",
+    "size": 1213,
+    "sha256": "bee6b8b2aa39572310f661b8aeeb810f873ea1884ff681cff3db5338735bcc28"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_config.png",
+    "size": 1959,
+    "sha256": "d0245d634d92074b8d2cc7bf477a666ea989c8d46e9ceb2c4ccf6e6467e09048"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_customlayout.png",
+    "size": 756,
+    "sha256": "c383311cab81745b08fb1ec9465ca848e9b4eb0497f820c36e7d82439c7edd94"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_customlight.png",
+    "size": 505,
+    "sha256": "db806fb3f69d84056cf7f3d602d24ff3b91cac6aa04da2a59a1cb4c57e603d0f"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_email.png",
+    "size": 1128,
+    "sha256": "e2c92dd1d4c79809b32c819aeba9c3847e0cf1caf638185854ca540d1073cc58"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_favorites.png",
+    "size": 1113,
+    "sha256": "02c795e894e5a0c4149e84ebc361ebe3beff31d99b5f48bd10e4e3fc8b64b266"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_file.png",
+    "size": 633,
+    "sha256": "54504c198616b3fe65d5381e687b1c55163968830dced373545328374fd81368"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_home.png",
+    "size": 1188,
+    "sha256": "251f6fd5a88d49f078fb0545051615db02a39763ee9b2778b9569ac4694caa53"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_input_delay.png",
+    "size": 507,
+    "sha256": "253b132b2760562b79ff71dcd70648036e928dcbc0a911a9f445518a76fc8a41"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_input_down.png",
+    "size": 338,
+    "sha256": "22edbe93cf1ebfd36985131450e99cb449176201d29350fa36cf770bfc51aea3"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_input_up.png",
+    "size": 336,
+    "sha256": "58896bc3a4536f9cdcb8982be97e17b4d8cb5fc0b76672a14a58096710fc692e"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_key_bottom.png",
+    "size": 307,
+    "sha256": "d2aa116a0d0e1b1388a23973952c9a0ea20bcda992c1764340e68ffa85fe38be"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_key_command.png",
+    "size": 379,
+    "sha256": "ec445f08925efa5401261b7cfab178910a60b3e72741410e7620d12550982635"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_key_enter.png",
+    "size": 306,
+    "sha256": "ddee5ba29e24f273b199c335e9a2a24eb6b9184a86e905869f31d8110fab2df5"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_key_left.png",
+    "size": 287,
+    "sha256": "1b50c92f4c0c0883ec82094b00d07c18f6590e8b1e25e9a9ee9bb20c5f90bef5"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_key_light.png",
+    "size": 499,
+    "sha256": "70507172c2a907851baca229c2052ebb8b1ee4df4b0e2975f4a9e61eab1ad240"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_key_right.png",
+    "size": 291,
+    "sha256": "0d6ac104c6ce82a5c0d2d9080e13bb0a89c74252cbaacad149ccfe1dd746603c"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_key_top.png",
+    "size": 318,
+    "sha256": "c3fe04d0c260f9341d5bef5d74718e3efe49c37feb6b4e12fd8fb3c85acdfc2b"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_keyboard.png",
+    "size": 866,
+    "sha256": "77cece23b3c20561b6b9315d1a1914ffeec68fb73da636b0fd0510aeaba7de5c"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_lcd_add.png",
+    "size": 433,
+    "sha256": "ef3c3db4ad58d76f47ead885457541636f38c5163f9446992dce6e46bf617419"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_light_on.png",
+    "size": 458,
+    "sha256": "0eee548687d2a76abf6e867c9a28fc05b0a6abd0bdcab99c3358b4b7494b11b0"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_light_swicth.png",
+    "size": 598,
+    "sha256": "a2f9535f4b986cd56c094ec357029775ff00e5c3e1deb2413ed1b862767949a2"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_lightmode.png",
+    "size": 1514,
+    "sha256": "502b87eb89dcb6b2c43b79eef890f63dd9833b3468446bd01207a1475f76a1a2"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_macro.png",
+    "size": 1172,
+    "sha256": "dbee6c5fa999b188c4094d2b250f691e5c7ab609a2a78bd692b39e3832dbe676"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_menu.png",
+    "size": 273,
+    "sha256": "e78e46eee40887f0dd0776916c07c3d9a87493013e98cacb92fda111bb6181e8"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_multimedia.png",
+    "size": 1180,
+    "sha256": "cae603a6192a70f94f589946189faa62ea110ab18bfbac79f4ea7a885943a658"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_music.png",
+    "size": 1379,
+    "sha256": "28831eee1305c467eb8abcf1ed3875e3b0ee542cdb65a5123420f2ccb28a89b4"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_next.png",
+    "size": 1097,
+    "sha256": "37a006389ebd6833c86d17ccab8fc0df98cca5c0d3cd62cbd6688a6b344b2293"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_palette_bar1.png",
+    "size": 133,
+    "sha256": "042ed1ebf1e5c134dfa4cfcc8d9c43ccd2475e457b946765bcfa56a5ef45fcc0"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_pc.png",
+    "size": 1214,
+    "sha256": "2f04bd4f0ced7d94d65dc0766ea29c4c3d99f834c05a51d4a2e089a70140d7e9"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_playpause.png",
+    "size": 1058,
+    "sha256": "659984961f3b0d07db3a6723a83a58df059f4b61162ed694aacff838dbbeb940"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_pre.png",
+    "size": 1114,
+    "sha256": "7e0e1702366afb7d2ae0a28d1144b2ed97d91ac9d35e555a364369272bde96e2"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_stop.png",
+    "size": 1046,
+    "sha256": "c08c8dd9800410841c38d7d5bd8487f5c853cdce77778dec88f3798933e94de6"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_tft.png",
+    "size": 663,
+    "sha256": "47ad3d9d7b725b188891ded15553490c4dcc149a87705869e0326db7bf8e2d72"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_userlight.png",
+    "size": 1560,
+    "sha256": "2021bc97252703525aaedc99ea45352407e8a718bd10ed6a838fba8d4ceed4c2"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_vol_down.png",
+    "size": 1157,
+    "sha256": "baac94fe1808285d1ea29e28f5aba31c86c23a302678620e956e8c6773f8f364"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_vol_mute.png",
+    "size": 1114,
+    "sha256": "bc41f3abd3fb49102b0d016d635d236d705dba9a97477b5c50cb1f8b441e28ef"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_vol_up.png",
+    "size": 1209,
+    "sha256": "2b359269459c139d01415dfd7f1a8c3571506d27334ebd2fd46e0cfae6f91a2d"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_web_backward.png",
+    "size": 990,
+    "sha256": "9f7825cf71d6eb51b1e09af94ae420c7e216b6e726b7828a00a453496def1c6d"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_web_foreward.png",
+    "size": 1002,
+    "sha256": "4e69ed67fec2444918b33a8d1c6fe265cf36c19635854fe181b9b46d299774bd"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_web_refresh.png",
+    "size": 1206,
+    "sha256": "c74736d8a6532bc325f801d7a167b6bded137e8007bb0a04a4f9a8ffce9461f8"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_web_search.png",
+    "size": 1276,
+    "sha256": "8601af83038bf51e43b92769f87eec2f740c7d11e31ee36a876a411df54d4111"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_web_stop.png",
+    "size": 1242,
+    "sha256": "cfc0d9680c0cc3e8bceeb7be9cc2bab022673313062aac99f63e02ea17373a1e"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/icon_win.png",
+    "size": 222,
+    "sha256": "63d72814f16d139ba2c2f672e784df42cdf7eaeadb1ea5f7b215386b8198e2d7"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_config.png",
+    "size": 5400,
+    "sha256": "ad0577541b09ff04b30feb2bdd283dbb500ab99273be0021223add8a4eb8522d"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_customkey.png",
+    "size": 2391,
+    "sha256": "e3a5c384cb93f2e78c469913a7722e6a11e832c2927df8fa3f630e6f5e41f349"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_customlight.png",
+    "size": 1247,
+    "sha256": "fecf1883104677059b5a52e7163b1d0414ffeb6d0c516fc0314756b207bbf7a4"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_home.png",
+    "size": 4265,
+    "sha256": "8e5db80c10b1150ea6bcafbb989149b701878d57354a269bdc2ae4c03145264c"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_light.png",
+    "size": 3886,
+    "sha256": "a297c42405e3d9440ae4059766ce16345097ee846db5c788c3422bdad97362e2"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_macro.png",
+    "size": 3140,
+    "sha256": "05caba543ccebbc7b4da905c8d418645b9c6cfdcadd46f1be133fae892719cfb"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_music.png",
+    "size": 2535,
+    "sha256": "b943c29b2ef59976fa7a3a8628a45ca9344e8261d5b4521d64522351b2140b22"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_sidelight.png",
+    "size": 3886,
+    "sha256": "a297c42405e3d9440ae4059766ce16345097ee846db5c788c3422bdad97362e2"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_tft.png",
+    "size": 1531,
+    "sha256": "b0b8c772531e5cede563ad6500ac8ee2db1b256f457b41a6ed4540936546e221"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/tab_userlight.png",
+    "size": 3957,
+    "sha256": "1734b78677b21431b32da9998c58945c65a6d461d9690f7a3650fa43b711a83a"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/icon/usb_mode.png",
+    "size": 635,
+    "sha256": "e3ec140f288ebbb12580f6ec1f14e18481acccb316026424f8e9f4780844c690"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imageview_item_hover.png",
+    "size": 669,
+    "sha256": "672d974ff76361d0cff6bd922d088e422ecda4188fb76816049a1cde3b84b5f2"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imageview_item_normal.png",
+    "size": 478,
+    "sha256": "4ebf4649c8871c3beabfc1fd95bafee1f615b644f52892a19762095de3c41098"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_btn_layer_n.png",
+    "size": 2340,
+    "sha256": "accbd9900605a9ac96b54983f1d002ff579f4a0e75b3e84c24c1d52d79f6990e"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_btn_layer_p.png",
+    "size": 2331,
+    "sha256": "7cf76727d32077cc61cf779feae865e77e749895866960219de0a3b9704c0e06"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_circlepalette.png",
+    "size": 17138,
+    "sha256": "a78e78d68dce4ce6d1ba1c9c269c764a3082afad4cf2d7f31ac0918b9b9cd874"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_combobox.png",
+    "size": 1662,
+    "sha256": "d7674f6a7805c4ceb5a373eb4b06576284601592cedd2869be57b5d1df260bc8"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_direction_bottom.png",
+    "size": 696,
+    "sha256": "775bd272fb8310aeb00576a2cf77d2d521aa5f2dcaf0a8fe6c562325c72f4546"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_direction_left.png",
+    "size": 774,
+    "sha256": "8cead6afb3a0605c54d9fec940cf2a28f0a12a75bf4ab2f37cf5d00fde8bba81"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_direction_right.png",
+    "size": 782,
+    "sha256": "a04fa6a2e810765110ce39eebf5e0a24df81a6045e31c1e4da910a670b3aa5fa"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_direction_top.png",
+    "size": 648,
+    "sha256": "61918821be83132b8718aa31eb033629a264d31efc7d0501c0eb35a5eba0ed3e"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_edit.png",
+    "size": 772,
+    "sha256": "01552ac415a12aca5959c02b96eb1883935addb500c44914358e98b85b144656"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_edit2.png",
+    "size": 541,
+    "sha256": "e35034fe83cd72d7c88367a3b5e836006d94acf5e188ad7916c50ee30bb2c9b5"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_help.png",
+    "size": 388,
+    "sha256": "952aa5c1714ed61113a2ad51c9322e84880af4d1fc56743d499f99f9d75973dd"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_key_edit.png",
+    "size": 341,
+    "sha256": "579c63b722a80dd35d855310fc748a948c73d71143b82d4f5eb19de4f227dcc6"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_key_edit_check.png",
+    "size": 355,
+    "sha256": "aa0f5a6925b55faf3d6a8dc9c5f4d01d65d225a1fc5a272b3ede11d7e855871a"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_lcdedit_bkg.png",
+    "size": 264,
+    "sha256": "3971a6b5e4a66a667149d5f53ba0cea6e3a493a9726fe81af7b3d2da0f03665d"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_loading_bkg.png",
+    "size": 699,
+    "sha256": "f3e25fc78798a44011a269b7d559a61051fcef4fd7a0b74f8d62c04c2830ef28"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_menubkg.png",
+    "size": 3139,
+    "sha256": "917a556b03c93b605fbe2333d966c3f18b4453c8f05cba489d1c52a43ec84199"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_scroll_v.png",
+    "size": 524,
+    "sha256": "122dbb67d6bb316fd8b5d3ec77bda1f86deddf4435f70d73b86d2a25b94e8433"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_slider_back.png",
+    "size": 364,
+    "sha256": "c4e589e380549a6c417b0bfd392c27e60891f081dc5bfa80065557f87394e0f2"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_thumb.png",
+    "size": 1598,
+    "sha256": "4434815d2868981432354b46474707c097d68d06976e91c98d1d98b7ff946358"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/img_tip_bk.png",
+    "size": 374,
+    "sha256": "ac9d4eb64e452c695771a68ead8f2f0f88e277fd73fc841af76da74b86b1a3bf"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_add.png",
+    "size": 441,
+    "sha256": "afc9f6de81f836caa433d92f9762afb8542047b808dcf0ecf94f06d59ffadcc9"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_del.png",
+    "size": 1045,
+    "sha256": "176427d3e59c9b510be86b79e1126d04723ad488d81f187a8e5faa24c6d137fe"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_edit.png",
+    "size": 1621,
+    "sha256": "fa9b9dac20ec61da91f873b8752d77b10228172f07b744024d472ae3c161e9d9"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_export.png",
+    "size": 1640,
+    "sha256": "960afb751236aefec0356c5dea770fe1d716b861203086e657198e17647ccaaa"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_import.png",
+    "size": 1534,
+    "sha256": "f26f23c018b5c30fe90eb0058b480d2e52ed9349db3539c51be46d01c8133991"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_lcd_add.png",
+    "size": 142,
+    "sha256": "7a970e5d82631ab65d22790117924ed50038dfa271c16e39bdf7e26903c71c03"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_lcd_addtext.png",
+    "size": 613,
+    "sha256": "0141dc9ef375014823b5cc87689eb15c9e820def42621a019cf76774b80308be"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_lcd_copy.png",
+    "size": 977,
+    "sha256": "d432ceacad398a973430fbc787c1a384aaa7a18d76eb745a83ef05db8cf47ba9"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_lcd_del.png",
+    "size": 999,
+    "sha256": "d2bf8f078b4ec63654cfdcabec8b2eb11442e2a74c4465f60dfb08e638889ab0"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_lcd_edit.png",
+    "size": 671,
+    "sha256": "3a35d02c1c88043b8f5cdd04866cabf42d6c3f53c0af1a248074355f8b33e114"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_lcd_erase.png",
+    "size": 976,
+    "sha256": "0eff54221fe34bd7addffeb99fb03742816e6b962a0c1660d801d02d2144492e"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_lcd_revoke.png",
+    "size": 807,
+    "sha256": "429ec71e8cfbdfd449dc7142e477c237108fb68d550e831735983e6387318b6a"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/imgbtn_more.png",
+    "size": 1927,
+    "sha256": "b628c42d507eee72d7ca61038fb520b3daafd50062c3bc25d6a6041101d9f230"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/keyboard/img_keyboard_layout.png",
+    "size": 33148,
+    "sha256": "87c7d32b9a7f6ea4ab02a45b22fc00c8876bb763b2dc21105ce2cb2dbf7bbd36"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/lcdlist_item_hover.png",
+    "size": 989,
+    "sha256": "aa4c97cf5733ed060c8acc91777a8c1e99b37437a0e35a7273c573ce388f5b6d"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/lcdlist_item_normal.png",
+    "size": 762,
+    "sha256": "1305f9d1b6b8bfeb0cdd4c8c4ec37e7a5458e94eacd99c9a1c1bf5fdf93773e0"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/loading.gif",
+    "size": 8676,
+    "sha256": "a7fb5f23f22ef424499b397af09f25d61bc5787afaf7df89e0b671a24156d71e"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/logo/logo.png",
+    "size": 1618,
+    "sha256": "31b4a021e9fed0ee4d6f0f85293ffcb41a41e5644c5051b5c98a6519ba3bf63b"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/main_bkg.png",
+    "size": 215814,
+    "sha256": "7decfbfcd46f9a01c1b12c456dfc4ee6a33d0179c6e0835eb677ccc865ab1796"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/main_sysbtn_close.png",
+    "size": 1324,
+    "sha256": "e77bb51541821d275de493998e8aa4d847b484d2e291d5c42672d49415f129c7"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/main_sysbtn_min.png",
+    "size": 521,
+    "sha256": "c7868453188eade03ffe2d38a7cacfc86a13ed73c30101824e9d3e004d20a07e"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/main_sysbtn_store.png",
+    "size": 2178,
+    "sha256": "e381638753b1d74a17529bc58c2e79cbdaea926a441c63afaa91770ce147e7b5"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/main_sysbtn_website.png",
+    "size": 3250,
+    "sha256": "95398a51f7692c52b00c6e1fb95724665c7e8b2755f2294c8f32e0bd02746a80"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/sysbtn_close.png",
+    "size": 1025,
+    "sha256": "7861e25a1da88a5e36665fb23c6077abfa532b582325ca7010c0c5e7340c531a"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/sysbtn_min.png",
+    "size": 1202,
+    "sha256": "46c45a9301cd34ca82ed5390d3a9839294878d99b32621898f8c15d6b4bad3fe"
+  },
+  {
+    "file": "GS3104T-PRO/skins/theme1/updatetips_bkg.png",
+    "size": 4196,
+    "sha256": "e6047038294170d502905cbc50aef9c88c5cd0a7837c755cb4aa82f06e0885cf"
+  },
+  {
+    "file": "GS3104T-PRO/unins000.dat",
+    "size": 28863,
+    "sha256": "299bfeb2e22f6096fc39ceb83844a2f657418a7230b288569dbf147580d0c054"
+  },
+  {
+    "file": "GS3104T-PRO/unins000.exe",
+    "size": 3386811,
+    "sha256": "6eec87b99988331896688f603b66ad76a9c73c0bddb903f87b16a9eed6e00ad9"
+  },
+  {
+    "file": "GS3104T-PRO/vcruntime140.dll",
+    "size": 79672,
+    "sha256": "a33d145b8f2a8c72c34e9914bb734372838fdd0eff36f327ac475cdb222536f4"
+  },
+  {
+    "file": "GS3104T-PRO驱动+固件 20241015/DSM318_108K_RGB三模_HFD64KC200_V1.20_20250722_0x2765.exe",
+    "size": 2037760,
+    "sha256": "1191ad14fabd9c448d45622bab257947464c1c32432aec2d5fd3a1eb04b2e64f"
+  },
+  {
+    "file": "GS3104T-PRO驱动+固件 20241015/使用前驱动请在有线模式下双击固件进行更新.txt",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "GS3104T-PRO驱动+固件 20241015/驱动程序-GS3104T-PRO Driver-1.0.0.3.exe",
+    "size": 5812900,
+    "sha256": "18e09b2ef6fef179347a545e328daf5b7431c8317c0156a8de96ccdc04ccfa8c"
+  }
+]

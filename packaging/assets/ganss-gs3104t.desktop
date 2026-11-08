@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=GANSS GS3104T PRO
+Comment=Configure GANSS GS3104T PRO keyboard
+Exec=ganss-gui
+Icon=ganss-gs3104t
+StartupWMClass=ganss-gs3104t
+Terminal=false
+Categories=Settings;HardwareSettings;

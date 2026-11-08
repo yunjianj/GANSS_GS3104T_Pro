@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ganss-gs3104t"
+version = "0.3.2"
+description = "Linux HID configuration CLI for GANSS GS3104T PRO"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+ganss = "ganss.cli:main"
+ganss-gui = "ganss.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["ganss*"]
+
+[tool.setuptools.package-data]
+ganss = ["data/*.json", "data/official-firmware.exe"]

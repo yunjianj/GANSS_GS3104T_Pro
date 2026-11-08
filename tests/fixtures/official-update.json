@@ -1,0 +1,20 @@
+{
+  "capture_sha256": "2255815a117f5d0bc6eb13a6db1a94b4796e5f3e0dca73be0bf10fb475b05644",
+  "feature_transactions": 1032,
+  "out_transfers": 1029,
+  "programmed_image_bytes": 65536,
+  "programmed_image_sha256": "42924f581b208c23ea4818c6a4d6db59669dfb4059074b99b635a2ee13c73fed",
+  "commands_hex": {
+    "enter_isp": "aa42895aff7162cc",
+    "query": "01aa5500",
+    "code_options": "03aa550000005a5a",
+    "enable_program": "05aa5500000000000004",
+    "return_user": "07aa550000000000"
+  },
+  "responses_hex": [
+    "01aa5500fafafafa2003000000005a5a1e00",
+    "05aa5500fafafafa",
+    "05aa5500fafafafa6527"
+  ],
+  "sanitization": "Only protocol fields retained; unused memory, host paths, input reports and unrelated USB devices omitted."
+}

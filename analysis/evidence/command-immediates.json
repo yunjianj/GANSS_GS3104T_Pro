@@ -1,0 +1,162 @@
+[
+  {
+    "va": "0x414270",
+    "business_prefix": "04 18"
+  },
+  {
+    "va": "0x41428f",
+    "business_prefix": "04 17"
+  },
+  {
+    "va": "0x41443d",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x418516",
+    "business_prefix": "04 2b"
+  },
+  {
+    "va": "0x418626",
+    "business_prefix": "04 18"
+  },
+  {
+    "va": "0x418b31",
+    "business_prefix": "04 2b"
+  },
+  {
+    "va": "0x418d54",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x418dc4",
+    "business_prefix": "04 f0"
+  },
+  {
+    "va": "0x423096",
+    "business_prefix": "04 18"
+  },
+  {
+    "va": "0x42310d",
+    "business_prefix": "04 72"
+  },
+  {
+    "va": "0x4232ff",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x423b43",
+    "business_prefix": "04 18"
+  },
+  {
+    "va": "0x423b6d",
+    "business_prefix": "04 28"
+  },
+  {
+    "va": "0x423c22",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x428054",
+    "business_prefix": "04 20"
+  },
+  {
+    "va": "0x42829c",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x42aeb6",
+    "business_prefix": "04 f5"
+  },
+  {
+    "va": "0x42aff5",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x42b0df",
+    "business_prefix": "04 18"
+  },
+  {
+    "va": "0x42b0fe",
+    "business_prefix": "04 13"
+  },
+  {
+    "va": "0x42b18f",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x42b1b9",
+    "business_prefix": "04 f0"
+  },
+  {
+    "va": "0x42d6cb",
+    "business_prefix": "04 19"
+  },
+  {
+    "va": "0x42db43",
+    "business_prefix": "04 15"
+  },
+  {
+    "va": "0x42db93",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x4329b4",
+    "business_prefix": "04 20"
+  },
+  {
+    "va": "0x432b44",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x433fc3",
+    "business_prefix": "04 18"
+  },
+  {
+    "va": "0x433fe2",
+    "business_prefix": "04 13"
+  },
+  {
+    "va": "0x43403e",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x434068",
+    "business_prefix": "04 f0"
+  },
+  {
+    "va": "0x44b7d3",
+    "business_prefix": "04 18"
+  },
+  {
+    "va": "0x44b7f2",
+    "business_prefix": "04 13"
+  },
+  {
+    "va": "0x44b85f",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x44b889",
+    "business_prefix": "04 f0"
+  },
+  {
+    "va": "0x44b930",
+    "business_prefix": "04 18"
+  },
+  {
+    "va": "0x44b95b",
+    "business_prefix": "04 23"
+  },
+  {
+    "va": "0x44bc25",
+    "business_prefix": "04 02"
+  },
+  {
+    "va": "0x44bc91",
+    "business_prefix": "04 f0"
+  },
+  {
+    "va": "0x4c7cdd",
+    "business_prefix": "04 00"
+  }
+]

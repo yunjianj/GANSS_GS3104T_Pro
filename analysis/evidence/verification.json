@@ -1,0 +1,16 @@
+{
+  "report_local_links_checked": 18,
+  "missing_links": [],
+  "source_hashes_checked": 145,
+  "application_tables_created": 14,
+  "keymap_entries": 112,
+  "protocol_byte_checks": {
+    "0x4512f3": "6a41",
+    "0x4512f8": "ff15a0505900",
+    "0x4513ac": "6892010b00",
+    "0x44ee16": "e8c5240000",
+    "0x418d29": "6840020000"
+  },
+  "firmware_hex_checksums": "pass",
+  "hardware_validation": "not performed"
+}

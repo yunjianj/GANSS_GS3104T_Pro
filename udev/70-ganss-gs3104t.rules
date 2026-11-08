@@ -1,0 +1,7 @@
+# Access for the active local desktop user; no world-writable device nodes.
+ACTION=="add|change", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="05ac", ATTRS{idProduct}=="024f", TAG+="uaccess"
+# Template ISP identities from the bundled updater's 20 05 / 20 03 tables.
+# This identity is shared by SONiX products; the updater also checks the USB port
+# of the explicitly selected GS3104T PRO and chip response before erasing.
+ACTION=="add|change", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="7140", TAG+="uaccess"
+ACTION=="add|change", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="7040", TAG+="uaccess"

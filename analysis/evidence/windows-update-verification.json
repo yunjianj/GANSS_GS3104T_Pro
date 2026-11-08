@@ -1,0 +1,54 @@
+{
+  "capture_sha256": "2255815a117f5d0bc6eb13a6db1a94b4796e5f3e0dca73be0bf10fb475b05644",
+  "firmware": {
+    "id": "gs3104t-pro-v1.20-20250722-2765",
+    "name": "DSM318_108K_RGB三模_HFD64KC200_V1.20_20250722_0x2765.exe",
+    "version_label": "V1.20",
+    "build_date_label": "2025-07-22",
+    "chip": "SN32F24xB",
+    "chip_label_source": "pe_resource_4010",
+    "source_sha256": "1191ad14fabd9c448d45622bab257947464c1c32432aec2d5fd3a1eb04b2e64f",
+    "image_sha256": "42924f581b208c23ea4818c6a4d6db59669dfb4059074b99b635a2ee13c73fed",
+    "resource": {
+      "type": 10,
+      "id": 4000,
+      "language": 0
+    },
+    "expected_isp_id_hex": "20 03 00 00",
+    "populated_bytes": 65536,
+    "flash_bytes": 65536,
+    "checksum16": 10085,
+    "bundled": true,
+    "windows_capture_verified": true,
+    "hardware_update_verified": false
+  },
+  "resource_file_offset": "0x1b964c",
+  "resource_rva": "0x1c564c",
+  "feature_transactions": 1032,
+  "all_usb_status_success": true,
+  "observed_usb": {
+    "vid": "05ac",
+    "pid": "024f",
+    "interface": 2,
+    "note": "Capture observation only; never hardcoded as device selection."
+  },
+  "source_image_equals_all_captured_blocks": true,
+  "program_blocks_64": 1024,
+  "checksum16_from_device": 10085,
+  "frames": {
+    "enter_isp": 121,
+    "query": 123,
+    "query_reply": 125,
+    "code_options": 127,
+    "program_request": 129,
+    "program_ack": 131,
+    "first_data": 133,
+    "last_data": 2179,
+    "checksum_reply": 2181,
+    "return_user": 2183,
+    "post_update_descriptor": 2206
+  },
+  "separate_erase_commands_sent": false,
+  "linux_hardware_update_verified": false,
+  "native_resource_load_va": "0x4261d4..0x426276"
+}

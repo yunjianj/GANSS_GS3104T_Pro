@@ -1,0 +1,12 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.json text eol=lf
+*.exe binary
+*.png binary
+
+# Preserve original XML/CSV line endings and objdump formatting as evidence.
+analysis/evidence/*.xml -text -whitespace
+analysis/evidence/*.csv -text -whitespace
+analysis/evidence/*-disasm.txt -text -whitespace

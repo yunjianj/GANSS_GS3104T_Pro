@@ -1,0 +1,28 @@
+# Build from the project root with packaging/arch/build.sh.
+pkgname=ganss-gs3104t
+pkgver=0.3.2
+pkgrel=1
+pkgdesc='Native Linux configuration tool for GANSS GS3104T PRO keyboards'
+arch=('any')
+license=('custom')
+depends=('python' 'python-gobject' 'gtk3')
+makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
+source=("${pkgname}-${pkgver}.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  python -m build --wheel --no-isolation
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  python -m installer --destdir="$pkgdir" dist/*.whl
+  install -Dm644 udev/70-ganss-gs3104t.rules "$pkgdir/usr/lib/udev/rules.d/70-ganss-gs3104t.rules"
+  install -Dm644 packaging/assets/ganss-gs3104t.desktop "$pkgdir/usr/share/applications/ganss-gs3104t.desktop"
+  install -Dm644 packaging/assets/ganss-gs3104t.png "$pkgdir/usr/share/icons/hicolor/256x256/apps/ganss-gs3104t.png"
+  install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname/README.md"
+  install -Dm644 NOTICE.md "$pkgdir/usr/share/doc/$pkgname/NOTICE.md"
+  install -dm755 "$pkgdir/usr/share/doc/$pkgname/docs"
+  install -m644 docs/*.md "$pkgdir/usr/share/doc/$pkgname/docs/"
+}

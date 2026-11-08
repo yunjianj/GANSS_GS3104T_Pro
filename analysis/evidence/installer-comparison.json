@@ -1,0 +1,14 @@
+[
+  {
+    "file": "DeviceDriver.exe",
+    "identical": true
+  },
+  {
+    "file": "config.xml",
+    "identical": true
+  },
+  {
+    "file": "layouts/rgb-keyboard.xml",
+    "identical": true
+  }
+]

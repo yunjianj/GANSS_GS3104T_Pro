@@ -1,0 +1,32 @@
+{
+  "source_sha256": "1191ad14fabd9c448d45622bab257947464c1c32432aec2d5fd3a1eb04b2e64f",
+  "entry_va": "0x406bb0",
+  "template_index": 18,
+  "query_id_override": "20 03 00 00",
+  "simulated": true,
+  "hardware_access": false,
+  "result": 0,
+  "events": [
+    {
+      "stubbed_enter_isp": "aa 42 89 5a ff 71 62 cc"
+    },
+    {
+      "direction": "out",
+      "hex": "01 aa 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "direction": "in",
+      "hex": "01 aa 55 00 fa fa fa fa 20 03 00 00 00 00 5a 5a 1e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+    },
+    {
+      "native_result": 5
+    },
+    {
+      "native_result": 4
+    }
+  ],
+  "data_blocks": 0,
+  "written_bytes": 0,
+  "written_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "checksum16": 0
+}

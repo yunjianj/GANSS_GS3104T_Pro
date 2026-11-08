@@ -1,0 +1,207 @@
+{
+  "source": "GS3104T-PRO/DeviceDriver.exe",
+  "source_sha256": "1fa6591f5e48a7417076ac244cd886aa6407434f45138ce9932c46dca4cf2b33",
+  "scope": "Old native driver built-in lighting modes; not a firmware-wide capability query.",
+  "modes": [
+    {
+      "mode": 1,
+      "name_zh": "静态恒亮",
+      "name_en": "Static",
+      "language_id": 521,
+      "language_id_string_va": "0x56e424",
+      "insert_call_va": "0x42b3ba",
+      "config_func_raw": 49,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 2,
+      "name_zh": "单点亮",
+      "name_en": "SingleOn",
+      "language_id": 522,
+      "language_id_string_va": "0x56e41c",
+      "insert_call_va": "0x42b3e7",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 3,
+      "name_zh": "单熄灭",
+      "name_en": "SingleOff",
+      "language_id": 523,
+      "language_id_string_va": "0x56e434",
+      "insert_call_va": "0x42b414",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 4,
+      "name_zh": "繁星点点",
+      "name_en": "Glittering",
+      "language_id": 524,
+      "language_id_string_va": "0x56e42c",
+      "insert_call_va": "0x42b441",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 5,
+      "name_zh": "漫天飞雪",
+      "name_en": "Falling",
+      "language_id": 525,
+      "language_id_string_va": "0x56e444",
+      "insert_call_va": "0x42b46e",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 6,
+      "name_zh": "百花争艳",
+      "name_en": "Colourful",
+      "language_id": 526,
+      "language_id_string_va": "0x56e43c",
+      "insert_call_va": "0x42b49b",
+      "config_func_raw": 3,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 7,
+      "name_zh": "动态呼吸",
+      "name_en": "Breath",
+      "language_id": 527,
+      "language_id_string_va": "0x56e454",
+      "insert_call_va": "0x42b4c8",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 8,
+      "name_zh": "光谱循环",
+      "name_en": "Spectrum",
+      "language_id": 528,
+      "language_id_string_va": "0x56e44c",
+      "insert_call_va": "0x42b4f5",
+      "config_func_raw": 3,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 9,
+      "name_zh": "彩泉涌动",
+      "name_en": "Outward",
+      "language_id": 529,
+      "language_id_string_va": "0x56e464",
+      "insert_call_va": "0x42b522",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 10,
+      "name_zh": "多彩纵横",
+      "name_en": "Scrolling",
+      "language_id": 530,
+      "language_id_string_va": "0x56e45c",
+      "insert_call_va": "0x42b54f",
+      "config_func_raw": 59,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 11,
+      "name_zh": "随波逐流",
+      "name_en": "Rolling",
+      "language_id": 531,
+      "language_id_string_va": "0x56e474",
+      "insert_call_va": "0x42b57c",
+      "config_func_raw": 55,
+      "physical_effect_verified": true
+    },
+    {
+      "mode": 12,
+      "name_zh": "峰回路转",
+      "name_en": "Rotating",
+      "language_id": 532,
+      "language_id_string_va": "0x56e46c",
+      "insert_call_va": "0x42b5a9",
+      "config_func_raw": 55,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 13,
+      "name_zh": "一触即发",
+      "name_en": "Explode",
+      "language_id": 533,
+      "language_id_string_va": "0x56e484",
+      "insert_call_va": "0x42b5d6",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 14,
+      "name_zh": "一石二鸟",
+      "name_en": "Launch",
+      "language_id": 534,
+      "language_id_string_va": "0x56e47c",
+      "insert_call_va": "0x42b603",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 15,
+      "name_zh": "涟漪扩散",
+      "name_en": "Ripples",
+      "language_id": 535,
+      "language_id_string_va": "0x56e494",
+      "insert_call_va": "0x42b630",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 16,
+      "name_zh": "川流不息",
+      "name_en": "Flowing",
+      "language_id": 536,
+      "language_id_string_va": "0x56e48c",
+      "insert_call_va": "0x42b65d",
+      "config_func_raw": 55,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 17,
+      "name_zh": "重峦叠嶂",
+      "name_en": "Pulsating",
+      "language_id": 537,
+      "language_id_string_va": "0x56e4a4",
+      "insert_call_va": "0x42b68a",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 18,
+      "name_zh": "斜风细雨",
+      "name_en": "Tilt",
+      "language_id": 538,
+      "language_id_string_va": "0x56e49c",
+      "insert_call_va": "0x42b6b7",
+      "config_func_raw": 55,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 19,
+      "name_zh": "来回穿梭",
+      "name_en": "Shuttle",
+      "language_id": 539,
+      "language_id_string_va": "0x56e4b4",
+      "insert_call_va": "0x42b6e4",
+      "config_func_raw": 51,
+      "physical_effect_verified": false
+    },
+    {
+      "mode": 0,
+      "name_zh": "关闭背光",
+      "name_en": "LED Off",
+      "language_id": 540,
+      "language_id_string_va": "0x56e4ac",
+      "insert_call_va": "0x42b711",
+      "config_func_raw": 0,
+      "physical_effect_verified": false
+    }
+  ]
+}

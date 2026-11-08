@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "layer": "normal",
+  "mappings": {
+    "A": "B",
+    "CapsLock": "CTRL_L",
+    "index:112": "CTRL+SHIFT+S"
+  }
+}

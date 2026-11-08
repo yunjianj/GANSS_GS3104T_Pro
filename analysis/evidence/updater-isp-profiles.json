@@ -1,0 +1,55 @@
+{
+  "source_sha256": "1191ad14fabd9c448d45622bab257947464c1c32432aec2d5fd3a1eb04b2e64f",
+  "notes": "Static generic tables do not prove actual silicon capacity or Windows runtime selection.",
+  "profiles": [
+    {
+      "index": 14,
+      "label": "SN32F248B",
+      "chip_record_va": "0x5b2e82",
+      "chip_record_hex": "80 86 58 00 0e 00 00 00 01 00 00 00 45 0c 40 70 20 03 00 00 01 11 00 05 00 00 00 09 00 00 00 40 00 00 00 01 00 00 00 53 2a 5b 00 00 00 00 00 00 00 00 00",
+      "query_id_hex": "20 03 00 00",
+      "template_boot_vid": "0c45",
+      "template_boot_pid": "7040",
+      "dispatch_type": 9,
+      "memory_layout_va": "0x5b2a53",
+      "memory_layout_hex": "80 86 58 00 11 03 20 00 00 00 00 00 00 00 00 01 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 00 04 00 00 00 04 00 00 00 00 00 00 00 00 00 00 01 00 00 00",
+      "template_flash_bytes": 65536,
+      "erase_count": 1024,
+      "write_blocks_64": 1024,
+      "hex_unspecified_fill": 0,
+      "early_code_options_03": true,
+      "separate_02_erase_options_04_erase_flash": false,
+      "generic_profile_only": true,
+      "windows_runtime_selection_verified": false
+    },
+    {
+      "index": 18,
+      "label": "SN32F290",
+      "chip_record_va": "0x5b2f4e",
+      "chip_record_hex": "50 86 58 00 12 00 00 00 01 00 00 00 45 0c 40 71 20 05 00 00 01 15 00 02 00 00 00 09 00 00 00 40 00 00 00 01 00 00 00 3f 2b 5b 00 00 00 00 00 00 00 00 00",
+      "query_id_hex": "20 05 00 00",
+      "template_boot_vid": "0c45",
+      "template_boot_pid": "7140",
+      "dispatch_type": 9,
+      "memory_layout_va": "0x5b2b3f",
+      "memory_layout_hex": "50 86 58 00 15 05 20 00 00 10 0d 00 00 00 00 04 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 10 00 00 00 00 00 00 00 00 00 00 01 00 00 00",
+      "template_flash_bytes": 262144,
+      "erase_count": 256,
+      "write_blocks_64": 4096,
+      "hex_unspecified_fill": 255,
+      "early_code_options_03": false,
+      "separate_02_erase_options_04_erase_flash": true,
+      "generic_profile_only": true,
+      "windows_runtime_selection_verified": false
+    }
+  ],
+  "code_evidence": {
+    "hex_fill": "0x4216E7..0x42170A",
+    "query_match": "0x406E59..0x406F64",
+    "2003_early_code_options": "0x407008..0x4070FC",
+    "skip_erase_for_index_14": "0x4072C6..0x4072D5 -> 0x407566",
+    "block_count": "0x407245 / 0x407592..0x40759C",
+    "data_loop": "0x4076BD..0x407749",
+    "checksum_range": "0x4077C6..0x4077DF"
+  }
+}

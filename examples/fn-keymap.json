@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "layer": "fn",
+  "mappings": {
+    "H": "LEFT",
+    "J": "DOWN",
+    "K": "UP",
+    "L": "RIGHT"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source": "GS3104T-PRO驱动+固件 20241015/DSM318_108K_RGB三模_HFD64KC200_V1.20_20250722_0x2765.exe",
+  "source_sha256": "1191ad14fabd9c448d45622bab257947464c1c32432aec2d5fd3a1eb04b2e64f",
+  "records": {
+    "chip_record": {
+      "va": "0x5b2f4e",
+      "hex": "50 86 58 00 12 00 00 00 01 00 00 00 45 0c 40 71 20 05 00 00 01 15 00 02 00 00 00 09 00 00 00 40 00 00 00 01 00 00 00 3f 2b 5b 00 00 00 00 00 00 00 00 00"
+    },
+    "memory_layout": {
+      "va": "0x5b2b3f",
+      "hex": "50 86 58 00 15 05 20 00 00 10 0d 00 00 00 00 04 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 10 00 00 00 00 00 00 00 00 00 00 01 00 00 00"
+    },
+    "ack": {
+      "va": "0x5b1aac",
+      "hex": "fa fa fa fa"
+    }
+  },
+  "flash_size": 262144,
+  "erase_count": 256,
+  "write_count": 4096,
+  "checksum_response_offset": 8,
+  "hardware_update_verified": false
+}

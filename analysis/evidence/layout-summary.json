@@ -1,0 +1,53 @@
+{
+  "key_count": 112,
+  "unique_key_indices": 112,
+  "max_key_index": 124,
+  "key_light_indices_identical": true,
+  "options": {
+    "menu": {
+      "macro": "1",
+      "light_mode": "1",
+      "sidelight": "0",
+      "user_light": "1",
+      "custom_light": "1",
+      "music": "1",
+      "screen": "0"
+    },
+    "menu_wireless": {
+      "macro": "1",
+      "light_mode": "1",
+      "sidelight": "0",
+      "user_light": "1",
+      "music": "1",
+      "screen": "0"
+    },
+    "function": {
+      "fn_layer": "1",
+      "sleep_time": "1",
+      "key_respondtime": "1"
+    },
+    "firmware": {
+      "version": "120",
+      "file": "",
+      "url": ""
+    },
+    "cmd_delaytime": {
+      "value": "35"
+    },
+    "screen": {
+      "gif_headlength": "256",
+      "gif_maxframes": "192",
+      "gif_count": "1",
+      "width": "128",
+      "height": "128"
+    },
+    "light": {
+      "rgb_keyboard": "1",
+      "default_mode": "11",
+      "default_brightness": "5",
+      "default_speed": "3",
+      "brightness_max": "5",
+      "speed_max": "5"
+    }
+  }
+}

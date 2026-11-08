@@ -1,0 +1,17 @@
+{
+  "version": "0.3.2-1",
+  "package": "dist/ganss-gs3104t-0.3.2-1-any.pkg.tar.zst",
+  "package_sha256": "dac098b4221b89351ebfb64fd418a1ec9498c683bfbc472feb82fbe3902838ee",
+  "source_tests_passed": 81,
+  "unpacked_package_tests_passed": 81,
+  "windows_capture_replay": "complete asynchronous job; all 1024 image blocks and meaningful command fields match",
+  "source_image_sha256": "42924f581b208c23ea4818c6a4d6db59669dfb4059074b99b635a2ee13c73fed",
+  "image_bytes": 65536,
+  "device_checksum16": 10085,
+  "hardware_commands_sent_this_turn": 0,
+  "linux_hardware_update_verified": false,
+  "wheel_sha256": "45c7c859512a69e99fd2afc16dcc76c4a0c5ccf9699a67a66049c1ecff079d2b",
+  "public_checkout_tests_passed": 81,
+  "raw_capture_required_for_tests": false,
+  "raw_capture_published": false
+}

@@ -1,0 +1,37 @@
+{
+  "record_types": {
+    "4": 3,
+    "0": 5761,
+    "5": 1,
+    "1": 1
+  },
+  "checksums_valid": true,
+  "eof_present": true,
+  "unique_data_bytes": 92152,
+  "regions": [
+    {
+      "start": "0x0",
+      "end_exclusive": "0x167f4",
+      "size": 92148,
+      "file": "firmware/region_00000000_000167f4.bin",
+      "sha256": "a805de868dfe27de39ff003dbf9c56347fa4e0441d0150a8a6802280c9872799"
+    },
+    {
+      "start": "0x3fffc",
+      "end_exclusive": "0x40000",
+      "size": 4,
+      "file": "firmware/region_0003fffc_00040000.bin",
+      "sha256": "9830b473f9f430c8dce96cff696ca85696c73dc6108be73855a71d77b4d43e09"
+    }
+  ],
+  "initial_sp": "0x20002b18",
+  "reset_vector": "0x7ee5",
+  "usb_device_descriptor_candidates": [
+    {
+      "address": "0x8f44",
+      "hex": "12 01 00 02 00 00 00 40 45 0c 01 88 00 01 01 02 00 01",
+      "vid": "0c45",
+      "pid": "8801"
+    }
+  ]
+}
