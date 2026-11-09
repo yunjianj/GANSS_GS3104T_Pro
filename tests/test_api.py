@@ -40,6 +40,20 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(response['result']['completed_steps'], 1)
         self.assertFalse(response['result']['effect_verified'])
 
+    def test_lighting_parameters_reach_correct_device_fields(self):
+        for connection, step, offset in (('usb', 2, 10), ('wireless', 0, 13)):
+            with self.subTest(connection=connection), \
+                 patch('ganss.api.select_hardware', return_value={'name': 'keyboard'}), \
+                 patch('ganss.api.select_transport', return_value=('/dev/example', connection)), \
+                 patch('ganss.api.Hidraw') as transport:
+                response = dispatch(self.request('lighting.set', {
+                    'device': 'keyboard', 'mode': 11, 'brightness': 1,
+                    'speed': 5, 'dry_run': True}))
+                self.assertTrue(response['ok'], response)
+                data = bytes.fromhex(response['result']['steps'][step]['hex'])
+                self.assertEqual(data[offset:offset + 3], bytes((1, 5, 0)))
+                transport.assert_not_called()
+
     def test_partial_failure(self):
         with patch('ganss.api.select_hardware', return_value={'name': 'keyboard'}), \
              patch('ganss.api.select_transport', return_value=('/dev/example', 'wireless')), \

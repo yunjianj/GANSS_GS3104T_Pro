@@ -115,12 +115,13 @@ def light_plan(mode=11, brightness=5, speed=3, color='FFFFFF', colorful=False, c
         raise ConfigError('colorful 必须为布尔值')
     rgb = color_rgb(color)
     if connection == 'usb':
-        # 0x408520 maps SQLite columns to struct; 0x42B124 serializes them.
+        # 0x408520 loads the struct at ebp-0x88. 0x42B144..162 writes
+        # colorful, brightness, speed, direction (not a second mode byte).
         p = bytearray(64)
         p[0] = mode
         if mode:
             p[1:4] = rgb
-            p[8:12] = bytes((int(colorful), mode, brightness, speed))
+            p[8:12] = bytes((int(colorful), brightness, speed, 0))
         p[14:16] = b'\xaa\x55'
         return [Step('准备灯光事务', 'feature', command(0x18), True),
                 Step('选择灯光参数块', 'feature', command(0x13, 1), True),
@@ -134,7 +135,7 @@ def light_plan(mode=11, brightness=5, speed=3, color='FFFFFF', colorful=False, c
         p[4] = mode
         if mode:
             p[5:8] = rgb
-            p[12:16] = bytes((int(colorful), mode, brightness, speed))
+            p[12:16] = bytes((int(colorful), brightness, speed, 0))
         p[18:20] = b'\xaa\x55'
         return [Step('写入无线灯光参数', 'short', short_packet(p), True, 5)]
     raise ConfigError('connection 必须为 usb 或 wireless')

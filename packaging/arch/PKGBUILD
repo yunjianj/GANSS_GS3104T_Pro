@@ -1,7 +1,7 @@
 # Build from the project root with packaging/arch/build.sh.
 pkgname=ganss-gs3104t
-pkgver=0.3.3
-pkgrel=1
+pkgver=0.3.4
+pkgrel=2
 pkgdesc='Native Linux configuration tool for GANSS GS3104T PRO keyboards'
 arch=('any')
 license=('custom')

@@ -9,15 +9,37 @@ class ProtocolTests(unittest.TestCase):
         plan = light_plan(11, 4, 2, '123456', True)
         self.assertEqual([s.data[1:3] for s in (plan[0], plan[1], plan[3], plan[4])],
                          [b'\x04\x18', b'\x04\x13', b'\x04\x02', b'\x04\xf0'])
-        expected = bytes.fromhex('00 0b 12 34 56 00 00 00 00 01 0b 04 02 00 00 aa 55') + bytes(48)
+        expected = bytes.fromhex('00 0b 12 34 56 00 00 00 00 01 04 02 00 00 00 aa 55') + bytes(48)
         self.assertEqual(plan[2].data, expected)
         self.assertEqual([s.ack for s in plan], [True, True, False, True, False])
 
     def test_wireless_light_golden_from_42b288(self):
         data = light_plan(11, 4, 2, '123456', True, 'wireless')[0].data
-        expected = bytes.fromhex('00 05 10 00 0b 12 34 56 00 00 00 00 01 0b 04 02 00 00 aa 55') + bytes(12)
+        expected = bytes.fromhex('00 05 10 00 0b 12 34 56 00 00 00 00 01 04 02 00 00 00 aa 55') + bytes(12)
         self.assertEqual(data[:32], expected)
-        self.assertEqual(data[32], 0xCD)
+        self.assertEqual(data[32], 0xC2)
+
+    def test_light_controls_change_only_their_own_fields(self):
+        # Native struct base = ebp-0x88: +0x10 brightness, +0x14 speed,
+        # +0x18 direction. Wired payload offsets 9/10/11, wireless 13/14/15.
+        for connection, step, brightness_offset, speed_offset in (
+                ('usb', 2, 10, 11), ('wireless', 0, 13, 14)):
+            def packet(**args):
+                return light_plan(connection=connection, **args)[step].data
+
+            baseline = packet(brightness=0, speed=0)
+            for field, offset in (('brightness', brightness_offset), ('speed', speed_offset)):
+                for level in range(1, 6):
+                    with self.subTest(connection=connection, field=field, level=level):
+                        params = dict(brightness=0, speed=0)
+                        params[field] = level
+                        changed = packet(**params)
+                        differences = {i for i, (a, b) in enumerate(zip(baseline, changed)) if a != b}
+                        self.assertEqual(differences, {offset, 32} if connection == 'wireless' else {offset})
+                        self.assertEqual(changed[offset], level)
+                        self.assertEqual(changed[speed_offset + 1], 0)  # direction
+                        if connection == 'wireless':
+                            self.assertEqual(changed[32], sum(changed[:32]) & 255)
 
     def test_off_keeps_marker_and_zeros(self):
         feature = light_plan(0)[2].data

@@ -48,6 +48,18 @@ class CliTests(unittest.TestCase):
         with redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
             main(['light', '--dry-run'])
 
+    def test_lighting_brightness_and_speed_fields(self):
+        for connection, step, offset in (('usb', 2, 10), ('wireless', 0, 13)):
+            self.scan.return_value = [hardware(connection)]
+            with self.subTest(connection=connection), patch('ganss.cli.Hidraw') as hid:
+                code, out, err = self.run_cli([
+                    'light', '--device', 'keyboard-id', '--brightness', '2',
+                    '--speed', '5', '--dry-run'])
+                self.assertEqual(code, 0, err)
+                data = bytes.fromhex(json.loads(out)['steps'][step]['hex'])
+                self.assertEqual(data[offset:offset + 3], bytes((2, 5, 0)))
+                hid.assert_not_called()
+
     def test_arbitrary_hidraw_path_not_accepted(self):
         with patch('ganss.cli.Hidraw') as hid:
             code, _, err = self.run_cli(['light', '--device', '/dev/hidraw42'])

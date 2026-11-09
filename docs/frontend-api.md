@@ -22,6 +22,8 @@
 
 灯光 mode 为 0..255 整数，0 表示关闭；brightness、speed 为 0..5 整数；color 为 RRGGBB 或 #RRGGBB。模式编号不保证都有固件支持。映射 source、target 的键名、组合键格式及限制见 README。`keymap.set` 的 target="default" 在普通层恢复标准键码；Fn 层需要显式目标。Fn+Tab 需要处于启用驱动自定义按键的状态，目前无法读取该开关。
 
+0.3.4 修正了亮度与速度的协议字段错位。前端仍使用原有 `brightness` 与 `speed` 参数，无需改动调用格式；升级后需要重新应用灯光设置。
+
 ## 调用示例
 
 以下每个 JSON 对象均作为一行写入子进程 stdin：

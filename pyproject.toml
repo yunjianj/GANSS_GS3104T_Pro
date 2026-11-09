@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ganss-gs3104t"
-version = "0.3.3"
+version = "0.3.4"
 description = "Linux HID configuration CLI for GANSS GS3104T PRO"
 readme = "README.md"
 requires-python = ">=3.10"

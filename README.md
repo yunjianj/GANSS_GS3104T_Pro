@@ -2,7 +2,7 @@
 
 基于项目内原厂驱动的静态逆向实现的 Python 命令行工具，提供灯光控制和普通层、Fn 层按键映射。直接使用 Linux hidraw，不依赖 hidapi、libusb 或第三方 Python 运行库。需要 Python 3.10 及以上版本，适用于采用 asm-generic ioctl ABI 的 Linux，例如 x86_64 和 aarch64。
 
-当前版本为 **0.3.3**。旧版 GS3104T-PRO 2.4G 已实机验证灯光、单键 A→B、普通层整层 A→B，以及恢复默认映射，均由用户确认实际效果。映射需要通过 Fn+Tab 启用驱动自定义按键。详情见 [实机测试记录](analysis/hardware-tests/results.md)。有线扫描与 ISP 查询已实机验证；0.3.2 修复固件资源选取和 `20 03` 流程，并与官方 Windows 成功抓包逐块核对。Linux 完整刷写尚未实机验证。协议依据见 [实现说明](docs/protocol.md) 与 [逆向报告](analysis/逆向报告.md)。
+当前版本为 **0.3.4**。旧版 GS3104T-PRO 2.4G 已实机验证灯光、单键 A→B、普通层整层 A→B，以及恢复默认映射，均由用户确认实际效果。映射需要通过 Fn+Tab 启用驱动自定义按键。详情见 [实机测试记录](analysis/hardware-tests/results.md)。有线扫描与 ISP 查询已实机验证；0.3.2 修复固件资源选取和 `20 03` 流程，并与官方 Windows 成功抓包逐块核对。Linux 完整刷写尚未实机验证。协议依据见 [实现说明](docs/protocol.md) 与 [逆向报告](analysis/逆向报告.md)。
 
 ## 快速开始
 
@@ -173,6 +173,8 @@ python -m unittest discover -s tests -v
 
 ## Linux 桌面前端
 
+**色彩预览并不可靠，仅供示意；颜色、亮度和动画速度均以键盘实际效果为准。**
+
 提供基于 GTK 3 的原生桌面界面，支持扫描设备、设置灯光、查看近似的灯效示意预览、管理多个键位规则集，以及发送前预览。需要系统安装 GTK 3 和 Python GObject（例如 Debian/Ubuntu 的 `python3-gi`、`gir1.2-gtk-3.0`，或 Arch Linux 的 `python-gobject`、`gtk3`）。使用能导入 `gi` 的 Python 环境，在项目目录运行：
 
 ```bash
@@ -183,7 +185,7 @@ python -m ganss.gui
 
 ### Arch Linux 安装包
 
-在装有构建依赖的 Arch Linux 上运行 `packaging/arch/build.sh`，安装包将生成在 `dist/`。使用 `sudo pacman -U dist/ganss-gs3104t-0.3.3-1-any.pkg.tar.zst` 安装；安装后可从应用菜单启动。包内包含基于官方程序图标转换的桌面图标和 udev 规则。安装规则后重新插拔设备，使权限规则生效。
+在装有构建依赖的 Arch Linux 上运行 `packaging/arch/build.sh`，安装包将生成在 `dist/`。使用 `sudo pacman -U dist/ganss-gs3104t-0.3.4-2-any.pkg.tar.zst` 安装；安装后可从应用菜单启动。包内包含基于官方程序图标转换的桌面图标和 udev 规则。安装规则后重新插拔设备，使权限规则生效。
 
 ## 0.3.2 固件更新修复
 

@@ -4,7 +4,7 @@
 
 ## 此次补充确认的字段
 
-`0x408520` 将 `SELECT * FROM t_light_data WHERE profile = ? AND mode = ?` 的列映射到对象：mode 位于 `+0x0C`、brightness 位于 `+0x10`、speed 位于 `+0x14`、colorful 位于 `+0x1C`、color_value 位于 `+0x24`。
+`0x408520` 将 `SELECT * FROM t_light_data WHERE profile = ? AND mode = ?` 的列映射到对象：mode 位于 `+0x0C`、brightness 位于 `+0x10`、speed 位于 `+0x14`、direction 位于 `+0x18`、colorful 位于 `+0x1C`、color_value 位于 `+0x24`。
 
 `0x42B124..0x42B16A` 将这些对象字段编码为 Feature 业务块：
 
@@ -13,12 +13,14 @@
 | 0 | 模式编号 |
 | 1..3 | COLORREF 低三字节，对应 R、G、B |
 | 8 | colorful |
-| 9 | mode |
-| 10 | brightness |
-| 11 | speed |
+| 9 | brightness |
+| 10 | speed |
+| 11 | direction（当前固定为原厂初始值 0） |
 | 14..15 | AA 55 |
 
-模式为 0 时，上述参数位置保持零，尾标记仍保留。方向等字段未在该发送路径中使用，因此不暴露对应 CLI 参数。无线版本由 `0x42B288..0x42B2C7` 编码，命令头为 `00 05 10 00`，参数位置后移 4 字节，尾标记在 18..19。
+模式为 0 时，上述参数位置保持零，尾标记仍保留。方向字段在该发送路径中存在，目前未暴露为 CLI/API 参数。无线版本由 `0x42B288..0x42B2C7` 编码，命令头为 `00 05 10 00`，参数位置后移 4 字节，尾标记在 18..19。
+
+0.3.4 更正：此前误将偏移 9..11 解释为 mode、brightness、speed，使亮度实际改变速度、速度实际改变方向。`0x42B0A6` 传入的对象基址是 `ebp-0x88`，因此 `0x42B14A` 的 `[ebp-0x78]` 对应 brightness，而非 mode；后续 `[ebp-0x74]` 和 `[ebp-0x70]` 分别对应 speed、direction。无线分支使用同一布局。原厂 `0x42B398` 将 `0x5751C0` 的常量复制到对象 `+0x18`，其首个 DWORD 为 0，即初始方向。CLI、JSON API 与 GTK 共用修正后的编码器，参数名称与取值范围不变。
 
 `0x4187C5` 使用 `key_index * 4` 写入键位槽，未减 1。普通映射为 `[02, modifier_mask, key_usage, 00]`。`0x451B40` 将 E0..E7 映射为 1、2、4、8、16、32、64、128。默认槽保留零，与原厂先清零缓冲区、只编码覆盖项的流程一致。
 
