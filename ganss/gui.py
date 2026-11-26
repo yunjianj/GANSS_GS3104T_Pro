@@ -497,19 +497,22 @@ class Window(Gtk.Window):
         spacer = Gtk.Box()
         spacer.set_size_request(-1, 140)
         box.pack_start(spacer, True, True, 0)
+        def on_response(dialog, response):
+            new_name = name.get_text().strip()
+            new_layer = layer.get_active_id()
+            dialog.destroy()
+            if response != Gtk.ResponseType.OK:
+                return
+            if not new_name or new_name == profiles.DEFAULT_NAME or new_name in self.profiles:
+                self.status.set_text('请输入不重复的规则集名称。')
+                return
+            updated = copy.deepcopy(self.profiles)
+            updated[new_name] = {'version': 1, 'layer': new_layer, 'mappings': {}}
+            self.persist_profiles(updated, new_name)
+
+        dialog.set_destroy_with_parent(True)
+        dialog.connect('response', on_response)
         dialog.show_all()
-        response = dialog.run()
-        new_name = name.get_text().strip()
-        new_layer = layer.get_active_id()
-        dialog.destroy()
-        if response != Gtk.ResponseType.OK:
-            return
-        if not new_name or new_name == profiles.DEFAULT_NAME or new_name in self.profiles:
-            self.status.set_text('请输入不重复的规则集名称。')
-            return
-        updated = copy.deepcopy(self.profiles)
-        updated[new_name] = {'version': 1, 'layer': new_layer, 'mappings': {}}
-        self.persist_profiles(updated, new_name)
 
     def delete_profile(self, *_args):
         name = self.selected_profile()
@@ -518,12 +521,16 @@ class Window(Gtk.Window):
         dialog = Gtk.MessageDialog(transient_for=self, modal=True, message_type=Gtk.MessageType.QUESTION,
                                    buttons=Gtk.ButtonsType.OK_CANCEL, text='删除规则集“{}”？'.format(name))
         dialog.format_secondary_text('此操作只删除本机保存的规则集，不会更改键盘。')
-        response = dialog.run()
-        dialog.destroy()
-        if response == Gtk.ResponseType.OK:
-            updated = copy.deepcopy(self.profiles)
-            del updated[name]
-            self.persist_profiles(updated, profiles.DEFAULT_NAME)
+        def on_response(dialog, response):
+            dialog.destroy()
+            if response == Gtk.ResponseType.OK and name in self.profiles:
+                updated = copy.deepcopy(self.profiles)
+                del updated[name]
+                self.persist_profiles(updated, profiles.DEFAULT_NAME)
+
+        dialog.set_destroy_with_parent(True)
+        dialog.connect('response', on_response)
+        dialog.show_all()
 
     def keyboard_key_selected(self, _view, index):
         key = BY_INDEX[int(index)]
@@ -672,11 +679,15 @@ class Window(Gtk.Window):
         dialog.format_secondary_text(message)
         dialog.add_button('取消', Gtk.ResponseType.CANCEL)
         dialog.add_button('开始更新', Gtk.ResponseType.OK)
-        response = dialog.run()
-        dialog.destroy()
-        if response == Gtk.ResponseType.OK:
-            self.updating = True
-            self.call('firmware.update', {'device': device_id}, self.firmware_started)
+        def on_response(dialog, response):
+            dialog.destroy()
+            if response == Gtk.ResponseType.OK:
+                self.updating = True
+                self.call('firmware.update', {'device': device_id}, self.firmware_started)
+
+        dialog.set_destroy_with_parent(True)
+        dialog.connect('response', on_response)
+        dialog.show_all()
 
     def firmware_started(self, result):
         self.tabs.set_sensitive(False)
@@ -697,8 +708,10 @@ class Window(Gtk.Window):
 
     def firmware_status(self, job_id, response):
         if not response.get('ok'):
-            self.status.set_text('无法查询更新状态：' + response.get('error', {}).get('message', '未知错误') + '；请勿断开连接。')
-            GLib.timeout_add(1000, self.poll_firmware, job_id)
+            self.finish_firmware_polling()
+            message = response.get('error', {}).get('message', '未知错误')
+            self.status.set_text(f'无法查询更新状态：{message}。已停止查询，更新结果未知。'
+                                 '可关闭窗口，请保持键盘连接和供电，暂勿重试更新。')
             return False
         result = response['result']
         total = result.get('total_bytes', 0)
@@ -710,10 +723,7 @@ class Window(Gtk.Window):
         if state == 'running':
             GLib.timeout_add(500, self.poll_firmware, job_id)
         else:
-            self.updating = False
-            self.tabs.set_sensitive(True)
-            self.scan_button.set_sensitive(True)
-            self.device.set_sensitive(True)
+            self.finish_firmware_polling()
             if state == 'completed':
                 self.status.set_text('更新完成：校验通过且键盘已重新连接。请检查键盘功能。')
             else:
@@ -726,6 +736,12 @@ class Window(Gtk.Window):
                 self.status.set_text('更新失败（阶段 {}）：{}。{}'.format(
                     result['stage'], result.get('error', {}).get('message', '未知错误'), detail))
         return False
+
+    def finish_firmware_polling(self):
+        self.updating = False
+        self.tabs.set_sensitive(True)
+        self.scan_button.set_sensitive(True)
+        self.device.set_sensitive(True)
 
     def completed(self, result):
         if result.get('dry_run'):
